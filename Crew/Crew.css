@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url(/assets/crew/background-crew-desktop.jpg);
+  color: white;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.left-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.left-container h2 {
+  margin-bottom: 100px;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 400; 
+  letter-spacing: 5px;
+  font-size: 5vh;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.728);
+  
+}
+
+.left-container :nth-child(2) {
+  font-size: 2vw;
+  color: rgba(199, 191, 191, 0.913);
+}
+
+.left-container :nth-child(3) {
+  font-size: 5vw;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+.left-container :nth-child(4) {
+  color: rgba(199, 191, 191, 0.913);
+  font-size: 1.5vw;
+}
+
+.right-container {
+  margin-top: 100px;
+}
+
+.right-container img {
+  width: 100%;
+}
+
+.dot {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center; 
+}
+
+.dot a {
+  background-color: #bbb;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.dot a:hover {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #fffffff9;
+  transition: all 1s;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .left-container {
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-container :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 5vw;
+    display: none;
+  }
+
+  .left-container :nth-child(2) {
+    font-size: 5vw;
+  }
+
+  .left-container :nth-child(3) {
+    font-size: 8vw;
+  }
+
+  .left-container :nth-child(4) {
+    font-size: 3vw;
+  }
+
+  .right-container {
+    display: flex;
+    border-bottom: 2px solid rgba(85, 71, 71, 0.279);
+  }
+
+  .right-container img {
+    margin-top: -80px;
+  }
+  
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/technology/background-technology-desktop.jpg);
+  font-family: "Poppins", sans-serif;
+  font-family: "Smooch Sans", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-container {
+  padding-left: 80px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container {
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  margin-top: 120px;
+}
+
+.main h2 {
+  color: rgba(255, 255, 255, 0.728);
+  margin: 10px 10px 20px 100px;
+  font-size: 5vh;
+  font-weight: 200;
+  letter-spacing: 5px;
+
+}
+
+.container-one {
+  margin-top: 60px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-one a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(192, 183, 183, 0.772);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container-one a:hover {
+  background-color: #fff;
+  color: black;
+  transition: all 1s ease-in;
+}
+
+.containertwo {
+  padding: 0 20px 0 50px;
+}
+
+.containertwo :nth-child(1) {
+  font-size: 1.5vw;
+}
+
+.containertwo :nth-child(2) {
+  font-size: 6vw;
+  font-weight: 200;
+}
+
+.containertwo :nth-child(3) {
+  font-size: 1.5vw;
+  color: rgba(199, 191, 191, 0.913);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+ 
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main h2 {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .left-container {
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  .containertwo :nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 3vw;
+  }
+
+  .containertwo :nth-child(2) {
+    font-size: 8vw;
+    margin-bottom: 20px;
+  }
+
+  .containertwo :nth-child(3) {
+    font-size: 3vw;
+    margin-bottom: 50px;
+  }
+  
+}

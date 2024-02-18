@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding-top: 100px;
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.main h2 {
+  color: rgba(255, 255, 255, 0.728);
+  margin-left: 120px;
+  letter-spacing: 5px;
+  font-size: 5vh;
+  font-weight: 200;
+}
+
+.main span {
+  font-weight: 500;
+  color: rgba(195, 191, 191, 0.849);
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.left-container img {
+  margin-top: 80px;
+  max-width: 400px;
+  float: right;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.right-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list {
+  font-size: 3vh;
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+a {
+  color: rgba(199, 191, 191, 0.913);
+  text-decoration: none;
+}
+
+.list-item:hover {
+  border-bottom: 1.5px solid white;
+}
+
+.right-container h1 {
+  font-size: 18vh;
+  font-weight: 300;
+}
+
+.right-container p {
+  color: rgb(196, 193, 193);
+  margin-bottom: 40px;
+}
+
+.distance {
+  padding-top: 35px;
+  border-top: 2px solid rgba(122, 116, 116, 0.886);
+  display: flex;
+  column-gap: 100px;
+}
+
+.km :nth-child(3) {
+  font-size: 4vh;
+  color: #fff;
+}
+
+.time :nth-child(3) {
+  font-size: 4vh;
+  color: #fff;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    background-size: cover;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .main h2 {
+    display: none;
+  }
+
+  .container {
+    gap: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-container img {
+    margin-top: 0;
+  }
+
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
